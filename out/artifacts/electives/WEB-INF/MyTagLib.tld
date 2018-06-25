@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>mytaglib</short-name>
+    <uri>/MyTagLib</uri>
+    <tag>
+        <name>lecturerTable</name>
+        <tag-class>ua.epam.groys.electives.mytags.LecturerTable</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>lecturerData</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>noStudent</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>studentName</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>mark</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>studyProgress</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>buttonInfo</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>studentTable</name>
+        <tag-class>ua.epam.groys.electives.mytags.StudentTable</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>studentData</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>noCourses</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>lecturerName</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>courseName</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>courseProgress</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>mark</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>buttonInfo</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>buttonUnsubscribe</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>coursesTable</name>
+        <tag-class>ua.epam.groys.electives.mytags.CoursesTable</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>coursesData</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>noCourses</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>lecturerName</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>courseName</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>buttonSubscribe</name>
+            <required>true</required>
+
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

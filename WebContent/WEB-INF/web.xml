@@ -1,0 +1,37 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0"
+         metadata-complete="true">
+
+    <display-name>Electives</display-name>
+
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>ua.epam.groys.electives.servlets.Controller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/controller</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AuthorizationFailed</servlet-name>
+        <jsp-file>/jsp/Authorize.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthorizationFailed</servlet-name>
+        <url-pattern>/authorization-failed</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>ua.epam.groys.electives.servlets.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>
